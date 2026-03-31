@@ -1,0 +1,15 @@
+services:
+  composer:
+    image: composer:2
+    #command: ["composer", "create-project", "laravel/laravel", "."]
+    command: ["php", "artisan","serve", "--host=0.0.0.0"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./laravel:/app
+    networks:
+    - php-network
+
+networks:
+  php-network:
+    driver: bridge
