@@ -30,3 +30,11 @@ if __name__ == "__main__":
         input()
         atendimento.processar_exame()
     print( f'Fila :{atendimento.fila}')
+
+
+
+    para subir o docker e
+    docker compose up
+    para para e ctrl+c
+    para derrubar o container e docker compose down
+    
